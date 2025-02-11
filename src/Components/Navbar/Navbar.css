@@ -1,0 +1,89 @@
+/* Navbar Container */
+.navbar {
+  background-color: #006400; /* Bottle Green */
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0; /* Align to the left */
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Ensures left and right alignment */
+  align-items: center;
+}
+
+/* Logo Container */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo Image */
+.navbar-logo img {
+  height: 45px;
+  margin-right: 10px;
+}
+
+/* Navigation Links */
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* Push menu items to the right */
+}
+
+.menu-list li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.menu-list li:hover a {
+  color: #FFD700; /* Gold hover effect */
+}
+
+/* Mobile Menu Button */
+.menu-button {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #006400; /* Bottle Green */
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-list.menu-open {
+    display: flex;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}

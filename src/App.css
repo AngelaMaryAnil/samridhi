@@ -1,0 +1,24 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+/* Card grid layout with responsive design */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Responsive design: Adjust grid to 1 column on smaller screens */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+}
