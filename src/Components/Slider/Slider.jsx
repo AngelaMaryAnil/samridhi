@@ -8,9 +8,9 @@ import "swiper/css/effect-fade";
 import "./Slider.css";
 
 const slides = [
-  { id: 1, image: "/IMAGESS/h.png.jpg", title: "", desc: "Innovative Farming Practices." },
-  { id: 2, image: "/IMAGESS/avacodo.png.jpg", title: "", desc: "Smart Farming Solutions." },
-  { id: 3, image: "/IMAGESS/cardamom1.png.jpg", title: "", desc: "Precision Agriculture." }
+  { id: 1, image: "/IMAGESS/h.png.jpg", title: "", desc: "Innovative Farming Practices" },
+  { id: 2, image: "/IMAGESS/avacodo.png.jpg", title: "", desc: "Smart Farming Solutions" },
+  { id: 3, image: "/IMAGESS/cardamom1.png.jpg", title: "", desc: "Precision Agriculture" }
 ];
 
 const Slider = () => {

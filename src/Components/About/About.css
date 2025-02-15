@@ -1,0 +1,45 @@
+/* About Container */
+.about-container {
+    padding: 30px;
+    background-color: #e9f5e9; /* Lighter green background */
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* About Title */
+.about-title {
+    font-size: 2.5rem;
+    color: #006747; /* Bottle Green */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* More modern font */
+    font-weight: bold;
+}
+
+/* About Description */
+.about-description {
+    font-size: 1.2rem;
+    color: #555; /* Softer dark color for text */
+    line-height: 1.7;
+    margin-bottom: 15px; /* Added spacing between paragraphs */
+    font-family: 'Georgia', serif; /* Elegant serif font for better readability */
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px;
+        max-width: 100%; /* Ensure container fits smaller screens */
+    }
+
+    .about-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .about-description {
+        font-size: 1.1rem;
+    }
+}

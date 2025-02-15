@@ -9,8 +9,6 @@ const LoginForm = () => {
     identifier: '',
     password: ''
   });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -22,32 +20,20 @@ const LoginForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError('');
-
     try {
       const response = await axios.post('http://localhost:5000/login', formData);
       console.log(response.data);
-
-      // Save token (if available)
-      if (response.data.token) {
-        localStorage.setItem('authToken', response.data.token);
-      }
-
       // Notify login successful
       alert('Login successful');
-
-      // Redirect to dashboard instead of register page
-      navigate('/dashboard');
+      // Redirect to register page
+      navigate('/register');
     } catch (error) {
-      setLoading(false);
       if (error.response) {
         console.error(error.response.data);
-        setError(error.response.data.message || 'Invalid credentials');
       } else {
         console.error(error.message);
-        setError('Something went wrong. Please try again.');
       }
+      // Handle login error
     }
   };
 
@@ -55,9 +41,6 @@ const LoginForm = () => {
     <div className="wrapper">
       <form onSubmit={handleSubmit}>
         <h1>Login</h1>
-
-        {error && <p className="error-message">{error}</p>}
-
         <div className="input-box">
           <input
             type="text"
@@ -73,18 +56,14 @@ const LoginForm = () => {
           <input
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder="password"
             value={formData.password}
             onChange={handleChange}
             required
           />
           <FaLock className="icon" />
         </div>
-
-        <button type="submit" disabled={loading}>
-          {loading ? 'Logging in...' : 'Login'}
-        </button>
-
+        <button type="submit">Login</button>
         <div className="register-link">
           <p>
             Don't have an account? <Link to="/register">Register</Link>

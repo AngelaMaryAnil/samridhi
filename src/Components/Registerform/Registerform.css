@@ -1,7 +1,8 @@
-.wrapper2{
+/* Wrapper for the form */
+.wrapper2 {
     width: 420px;
     background: transparent;
-    border: 2px solid rgba(255,255,255,.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(167, 159, 46, 0.1);
     color: #000000;
@@ -9,13 +10,15 @@
     padding: 30px 40px;
 }
 
-.wrapper2 h1{
+/* Login heading */
+.wrapper2 h1 {
     font-size: 36px;
     text-align: center;
+    color: #006747; /* Bottle Green for the heading */
 }
 
-
-.wrapper2 .ip-box{
+/* Input box container */
+.wrapper2 .ip-box {
     position: relative;
     width: 100%;
     height: 50px;
@@ -23,85 +26,86 @@
     margin-bottom: 40px;
 }
 
-.wrapper2 .farmer{
+/* Farmer section (Flexbox container) */
+.wrapper2 .farmer {
     display: flex;
     gap: 20px;
     width: 100%;
     height: 10px;
-    padding:  0 20px 25px 20px;
-
+    padding: 0 20px 25px 20px;
 }
 
-
-.ip-box input{
+/* Input fields */
+.ip-box input,
+.ip-box select {
     width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid  rgba(36, 26, 26, 0.2);
-    border-radius: 40px;  
-    font-size: 16px;
-    color: #000000;
-     padding: 20px 45px 20px 20px; 
-}
-
-.ip-box select{
-    width: 100%;
-    height: 100%;
+    height: 50px; /* Ensure select elements are the same height as input */
     background: transparent;
     border: none;
     outline: none;
     border: 2px solid rgba(36, 26, 26, 0.2);
-    border-radius: 40px;  
+    border-radius: 40px;
     font-size: 16px;
     color: #000000;
     padding-left: 20px;
 }
 
-.ip-box input::placeholder{
-    color: #000000;
-
+/* Placeholder text */
+.ip-box input::placeholder,
+.ip-box select::placeholder {
+    color: #666; /* Slightly lighter placeholder text */
 }
 
+/* Select dropdown styling */
+.ip-box select {
+    background-color: #fff; /* White background for select */
+    color: #000; /* Black text color */
+}
+
+/* Label styles */
 .ip-box label {
     display: block;
     margin-left: 20px;
     font-size: 16px;
-    color: #000000;
-  }
+    color: #006747; /* Bottle Green for labels */
+}
 
-
-.wrapper2 button{
+/* Button styling */
+.wrapper2 button {
     width: 100%;
     height: 45px;
     border: none;
     outline: none;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    background: #006747; /* Bottle Green for button */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #fff;
     font-weight: 700;
 }
 
-.wrapper2 button:hover{
-    background: #f2f2f2;
+/* Button hover effect */
+.wrapper2 button:hover {
+    background: #004f3a; /* Darker shade of Bottle Green */
 }
 
-.wrapper2 .register-link{
+/* Register section */
+.wrapper2 .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
 }
 
-.register-link p a{
-    color: #fff;
+/* Register link */
+.register-link p a {
+    color: #006747; /* Bottle Green for the register link */
     text-decoration: none;
     font-weight: 600;
 }
 
-.register-link p a:hover{
+/* Hover effect for register link */
+.register-link p a:hover {
     text-decoration: underline;
+    color: #004f3a; /* Darker Bottle Green for hover state */
 }

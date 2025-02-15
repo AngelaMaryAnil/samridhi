@@ -1,5 +1,4 @@
-/* App.css */
-
+/* app-container to center content */
 .app-container {
   display: flex;
   justify-content: center;
@@ -7,13 +6,20 @@
   padding: 25px;
 }
 
-/* Card grid layout with responsive design */
+/* Card grid layout with 2x2 format */
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-  gap: 20px;
+  gap: 20px; /* Spacing between cards */
   max-width: 1200px;
   width: 100%;
+}
+
+/* Responsive design: Adjust grid to 2 cards per row on medium screens */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
 }
 
 /* Responsive design: Adjust grid to 1 column on smaller screens */

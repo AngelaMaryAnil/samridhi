@@ -1,103 +1,132 @@
-.wrapper{
+/* Wrapper for the form */
+.wrapper {
     width: 420px;
     background: transparent;
-    border: 2px solid rgba(255,255,255,.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(167, 159, 46, 0.1);
-    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
     border-radius: 10px;
     padding: 30px 40px;
 }
 
-.wrapper h1{
+/* Login heading */
+.wrapper h1 {
     font-size: 36px;
     text-align: center;
+    color: #006747; /* Bottle Green for the heading */
 }
 
-.wrapper .input-box{
+/* Input box container */
+.wrapper .input-box {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.input-box input{
+/* Input fields */
+.input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255,255,255,.2);
-    border-radius: 40px;  
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
     font-size: 16px;
-    color: #fff;
+    color: #333;
     padding: 20px 45px 20px 20px;
 }
 
-.input-box input::placeholder{
-    color: #fff;
+/* Placeholder text */
+.input-box input::placeholder {
+    color: #666;
 }
 
-.input-box .icon{
+/* Icons inside input fields */
+.input-box .icon {
     position: absolute;
-    right: 20px;    
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 16px;
+    color: #555;
 }
 
-.wrapper .remember-forgot{
+/* Remember me & Forgot password section */
+.wrapper .remember-forgot {
     display: flex;
     justify-content: space-between;
     margin: -15px 0 15px;
     font-size: 14.5px;
+    color: #333;
 }
 
-.remember-forgot label input{
-    accent-color: #fff;
+/* Checkbox style */
+.remember-forgot label input {
+    accent-color: #006747; /* Bottle Green accent color */
     margin-right: 2px;
-
 }
 
-.remember-forgot a{
-    color: #fff;
+/* Forgot password link */
+.remember-forgot a {
+    color: #006747; /* Bottle Green for the link */
     text-decoration: none;
 }
 
-.remember-forgot a:hover{
+.remember-forgot a:hover {
     text-decoration: underline;
 }
 
-.wrapper button{
+/* Login button */
+.wrapper button {
     width: 100%;
     height: 45px;
     border: none;
     outline: none;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    background: #006747; /* Bottle Green */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #fff;
     font-weight: 700;
 }
 
-.wrapper button:hover{
-    background: #f2f2f2;
+/* Login button hover effect */
+.wrapper button:hover {
+    background: #004f3a; /* Darker shade of Bottle Green */
 }
 
-.wrapper .register-link{
+/* Register section */
+.wrapper .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
+    color: #333;
 }
 
-.register-link p a{
-    color: #fff;
+/* Register link */
+.register-link p a {
+    color: #006747 !important; /* Bottle Green for the link */
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-.register-link p a:hover{
+/* Hover effect */
+.register-link p a:hover {
     text-decoration: underline;
+    color: #004f3a; /* Darker Bottle Green */
+}
+
+/* When clicked (active state) */
+.register-link p a:active {
+    color: #003b2b; /* Even darker for active state */
+}
+
+/* Background styling */
+body {
+    background-size: cover;
 }

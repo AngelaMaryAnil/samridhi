@@ -5,27 +5,27 @@
   position: relative;
 }
 
-
 .slide {
   height: 500px;
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end; /* Align content to the bottom */
+  justify-content: flex-start; /* Align content to the left */
+  padding: 20px;
 }
 
 .slide-content {
-  background: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 20px;
   text-align: left;
-  border-radius: 30px;
+  max-width: 60%;
+  padding: 10px 0; /* Remove background and extra padding */
 }
 
 h2 {
   margin: 0;
   font-size: 2rem;
+  color: white;
 }
 
 p {

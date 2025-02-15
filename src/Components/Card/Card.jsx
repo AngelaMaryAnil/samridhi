@@ -1,5 +1,6 @@
 import React from "react";
-import "./Card.css"; // Include the CSS file for styling
+import { Link } from "react-router-dom"; // Import Link for navigation
+import "./Card.css";
 
 const Card = ({ image, title, description, link }) => {
   return (
@@ -10,9 +11,9 @@ const Card = ({ image, title, description, link }) => {
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
-        <a href={link} className="card-link">
+        <Link to={link} className="card-link">
           Read More
-        </a>
+        </Link>
       </div>
     </div>
   );
