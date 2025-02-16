@@ -1,21 +1,13 @@
-import "./App.css"; 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
-// Import Components
 import Navbar from "./Components/Navbar/Navbar";
 import Mainpage from "./Components/Navbar/Mainpage";
 import RegisterForm from "./Components/Registerform/RegisterForm";
 import LoginForm from "./Components/Loginform/LoginForm";
 import About from "./Components/About/About";
 import ContactForm from "./Components/ContactForm/ContactForm";
-import Croplist from "./Components/Croplist/Croplist"; // Ensure correct path
-import Cardamom from "./Components/Crop/Cardamom"; // Ensure correct path
-{/*import Rubber from "./Components/Crops/Rubber"; // Ensure correct path*/}
-
-// Import Global Styles
-{/*import "./App.css"; */}// Global styles should be at the bottom of imports
+import Card from "./Components/Card/Card";
+import DetailsPage from "./Components/DetailsPage/DetailsPage";
 
 function App() {
   return (
@@ -27,9 +19,33 @@ function App() {
         <Route path="/login" element={<LoginForm />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactForm />} />
-        <Route path="/crops" element={<Croplist />} />
-        <Route path="/crop/cardamom" element={<Cardamom />} />
-       {/*} <Route path="/crop/rubber" element={<Rubber />} />*/}
+
+        {/* Farming Information Cards */}
+        <Route 
+          path="/rubber-card" 
+          element={
+            <Card 
+              image="https://via.placeholder.com/300"
+              title="RUBBER"
+              description="Learn the best practices for rubber farming."
+              details=""
+            />
+          } 
+        />
+        <Route 
+          path="/nutmeg-card" 
+          element={
+            <Card 
+              image="https://via.placeholder.com/300"
+              title="NUTMEG"
+              description="Explore nutmeg cultivation techniques."
+              details=""
+            />
+          } 
+        />
+
+        {/* Details Page */}
+        <Route path="/details" element={<DetailsPage />} />
       </Routes>
     </Router>
   );
