@@ -92,6 +92,86 @@ const DetailsPage = () => {
   
           <h3>Conclusion</h3>
           <p>Rubber cultivation requires proper soil management, effective propagation techniques, and integrated pest control strategies to ensure high yields and long-term sustainability.</p>
+          
+          <h3>Farmers Response</h3>
+        <h4>1.1 Climate & Environmental Conditions</h4>
+        <ul>
+          <li>Rubber requires a <strong>tropical climate with consistent rainfall</strong>.</li>
+          <li>Ideal temperature range: <strong>25°C – 35°C</strong>.</li>
+          <li><strong>Drought reduces latex production</strong>, while <strong>excessive rain disrupts tapping schedules</strong>.</li>
+        </ul>
+
+        <h4>1.2 Soil Management & Preparation</h4>
+        <ul>
+          <li>Prefers <strong>alluvial soil with good drainage</strong>.</li>
+          <li>Farmers practice <strong>minimum tillage</strong> to maintain soil health.</li>
+          <li><strong>Organic compost & green manure</strong> improve soil fertility.</li>
+        </ul>
+
+        <h4>1.3 Irrigation & Water Management</h4>
+        <ul>
+          <li><strong>Rainwater harvesting</strong> is commonly practiced.</li>
+          <li><strong>Drip irrigation and sprinkler systems</strong> support latex production during dry spells.</li>
+        </ul>
+
+        <h4>1.4 Pest & Disease Control</h4>
+        <h5>Common Pests & Diseases:</h5>
+        <ul>
+          <li><strong>Fungal infections</strong> (Leaf Blight, Powdery Mildew).</li>
+          <li><strong>Bacterial blight and rubber tree pests</strong>.</li>
+        </ul>
+
+        <h5>Control Measures:</h5>
+        <ul>
+          <li><strong>Integrated Pest Management (IPM)</strong> is widely used.</li>
+          <li><strong>Chemical pesticides and fungicides</strong> are applied when necessary.</li>
+          <li><strong>Biological control methods</strong> help reduce chemical dependency.</li>
+        </ul>
+
+        <h4>1.5 Harvesting & Post-Harvest Practices</h4>
+        <ul>
+          <li><strong>Hand-tapping techniques</strong> ensure latex quality.</li>
+          <li><strong>Protective coverings</strong> prevent latex loss during rain.</li>
+        </ul>
+
+        <h4>1.6 Market Challenges & Economic Factors</h4>
+        <ul>
+          <li><strong>Price fluctuations</strong> affect income stability.</li>
+          <li>Farmers primarily sell rubber through <strong>wholesale buyers</strong>.</li>
+          <li><strong>Climate change impacts latex yield</strong> and tapping frequency.</li>
+        </ul>
+
+        <h4>1.7 Climate Adaptation Strategies</h4>
+        <ul>
+          <li><strong>Conservation tillage & rainwater harvesting</strong> reduce environmental risks.</li>
+          <li>Farmers are testing <strong>climate-resilient rubber varieties</strong>.</li>
+        </ul>
+
+        <h3>General Farming Practices & Sustainability</h3>
+
+        <h4>1. Soil Conservation & Fertility Management</h4>
+        <ul>
+          <li><strong>Mulching, compost, and cover crops</strong> enhance soil structure.</li>
+          <li><strong>Soil testing</strong> is limited but gaining importance.</li>
+        </ul>
+
+        <h4>2. Water Conservation Strategies</h4>
+        <ul>
+          <li><strong>Rainwater harvesting and conservation tillage</strong> are commonly used.</li>
+          <li><strong>Efficient irrigation methods</strong> like <strong>drip and sprinkler irrigation</strong> help in water management.</li>
+        </ul>
+
+        <h4>3. Climate Resilience & Sustainability</h4>
+        <ul>
+          <li>Farmers are <strong>switching to climate-resistant crop varieties</strong>.</li>
+          <li><strong>Organic fertilizers and IPM methods</strong> are replacing chemical-heavy approaches.</li>
+        </ul>
+
+        <h4>4. Market & Economic Challenges</h4>
+        <ul>
+          <li><strong>Price volatility and market competition</strong> affect all crops.</li>
+          <li>Farmers are <strong>adopting online sales and direct-to-consumer models</strong>.</li>
+        </ul>
         </div>
       ),
     NUTMEG: (
@@ -101,8 +181,8 @@ const DetailsPage = () => {
 
         <h3>Climate and Soil Requirements</h3>
         <ul>
-          <li><strong>Climate:</strong> Requires humid tropical climate with **150-250 cm** annual rainfall. Grows at elevations up to **1000 meters**.</li>
-          <li><strong>Soil:</strong> Prefers **friable, well-drained clay to red soils**.</li>
+          <li><strong>Climate:</strong> Requires humid tropical climate with 150-250 cm annual rainfall. Grows at elevations up to 1000 meters.</li>
+          <li><strong>Soil:</strong> Prefers friable, well-drained clay to red soils.</li>
         </ul>
 
         <h3>Popular Nutmeg Varieties</h3>
@@ -188,8 +268,61 @@ const DetailsPage = () => {
 
         <h3>Conclusion</h3>
         <p>Nutmeg farming requires careful management but can be highly profitable. Following proper techniques ensures healthy crops and good yields.</p>
-      </div>
-    ),
+        <h4>Farmers Response:</h4>
+    <h5>1.1 Climate & Environmental Conditions</h5>
+    <ul>
+      <li>Grows well in a temperate climate.</li>
+      <li>Prefers alluvial soil.</li>
+    </ul>
+
+    <h5>1.2 Irrigation & Water Management</h5>
+    <ul>
+      <li>Sprinkler irrigation is widely used.</li>
+    </ul>
+
+    <h5>1.3 Pest & Disease Control</h5>
+    <h6>Common Pests & Diseases:</h6>
+    <ul>
+      <li>Fungal infections and leaf diseases.</li>
+    </ul>
+
+    <h6>Control Measures:</h6>
+    <ul>
+      <li>Chemical pesticides are commonly used.</li>
+      <li>1% Bordeaux Mixture is applied twice during the rainy season to prevent fungal infections.</li>
+    </ul>
+
+    <h5>1.4 Harvesting & Market</h5>
+    <ul>
+      <li>Farmers lack proper information on the ideal harvesting period, affecting yield quality.</li>
+    </ul>
+
+    <h4>General Farming Practices & Sustainability</h4>
+    <h5>1. Soil Conservation & Fertility Management</h5>
+    <ul>
+      <li>Mulching, compost, and cover crops enhance soil structure.</li>
+      <li>Soil testing is limited but gaining importance.</li>
+    </ul>
+
+    <h5>2. Water Conservation Strategies</h5>
+    <ul>
+      <li>Rainwater harvesting and conservation tillage are commonly used.</li>
+      <li>Efficient irrigation methods like drip and sprinkler irrigation help in water management.</li>
+    </ul>
+
+    <h5>3. Climate Resilience & Sustainability</h5>
+    <ul>
+      <li>Farmers are switching to climate-resistant crop varieties.</li>
+      <li>Organic fertilizers and IPM methods are replacing chemical-heavy approaches.</li>
+    </ul>
+
+    <h5>4. Market & Economic Challenges</h5>
+    <ul>
+      <li>Price volatility and market competition affect all crops.</li>
+      <li>Farmers are adopting online sales and direct-to-consumer models.</li>
+    </ul>
+  </div>
+),
     AVOCADO: (
         <div>
           <h2>Avocado Farming Guide</h2>
@@ -353,14 +486,97 @@ const DetailsPage = () => {
   
           <h3>Conclusion</h3>
           <p>Cardamom cultivation requires careful soil management, proper propagation techniques, and pest control strategies. By following these guidelines, farmers can achieve high yields and superior quality spice production.</p>
+          <h4>Farmers Response:</h4>
+
+    <h5>1.1 Climate & Environmental Conditions</h5>
+    <ul>
+      <li>Cardamom thrives in warm, humid conditions with well-distributed rainfall.</li>
+      <li>Ideal temperature range: 10°C – 30°C.</li>
+      <li>Requires shaded or semi-shaded conditions to prevent overheating.</li>
+      <li>Drought and excessive rainfall can negatively impact flowering and capsule formation.</li>
+    </ul>
+
+    <h5>1.2 Soil Management & Preparation</h5>
+    <ul>
+      <li>Requires loamy, well-drained soil rich in organic matter.</li>
+      <li>Common soil preparation methods:
+        <ul>
+          <li>Tilling and fertilization (most common practice).</li>
+          <li>Minimum tillage & mulching to reduce erosion and retain moisture.</li>
+          <li>Cover cropping & compost application to enhance soil fertility.</li>
+      </ul></li>
+      <li>Soil testing is done by some farmers, while others plan to implement it.</li>
+    </ul>
+
+    <h5>1.3 Irrigation & Water Management</h5>
+    <ul>
+      <li>Sprinkler irrigation is widely used to maintain soil moisture.</li>
+      <li>Drip irrigation is applied to optimize water usage.</li>
+      <li>Rainwater harvesting helps ensure water availability in dry periods.</li>
+      <li>Mulching reduces evaporation and maintains soil moisture.</li>
+    </ul>
+
+    <h5>1.4 Pest & Disease Control</h5>
+    <h6>Common Pests & Diseases:</h6>
+    <ul>
+      <li>Thrips and root grubs cause damage to roots.</li>
+      <li>Fungal infections (Capsule Rot, Leaf Blight) are major threats.</li>
+    </ul>
+
+    <h6>Control Measures:</h6>
+    <ul>
+      <li>Chemical pesticides and fungicides are commonly used.</li>
+      <li>Some farmers integrate Integrated Pest Management (IPM) for sustainability.</li>
+      <li>Regular crop rotation and soil monitoring help in disease prevention.</li>
+    </ul>
+
+    <h5>1.5 Harvesting & Post-Harvest Practices</h5>
+    <ul>
+      <li>Hand-picking ensures high quality and prevents damage to capsules.</li>
+      <li>Proper drying and curing techniques enhance shelf life and flavor retention.</li>
+    </ul>
+
+    <h5>1.6 Market Challenges & Economic Factors</h5>
+    <ul>
+      <li>Price volatility and market competition impact profitability.</li>
+      <li>Farmers sell cardamom through wholesale markets and online platforms.</li>
+      <li>Climate fluctuations affect yield and quality, leading to inconsistent income.</li>
+    </ul>
+
+    <h5>1.7 Climate Adaptation Strategies</h5>
+    <ul>
+      <li>Mulching and organic fertilizers sustain soil health.</li>
+      <li>Farmers are adopting climate-resilient cardamom varieties.</li>
+    </ul>
+
+    <h4>General Farming Practices & Sustainability</h4>
+
+    <h5>1. Soil Conservation & Fertility Management</h5>
+    <ul>
+      <li>Mulching, compost, and cover crops enhance soil structure.</li>
+      <li>Soil testing is limited but gaining importance.</li>
+    </ul>
+
+    <h5>2. Water Conservation Strategies</h5>
+    <ul>
+      <li>Rainwater harvesting and conservation tillage are commonly used.</li>
+      <li>Efficient irrigation methods like drip and sprinkler irrigation help in water management.</li>
+    </ul>
+
+    <h5>3. Climate Resilience & Sustainability</h5>
+    <ul>
+      <li>Farmers are switching to climate-resistant crop varieties.</li>
+      <li>Organic fertilizers and IPM methods are replacing chemical-heavy approaches.</li>
+    </ul>
+
+    <h5>4. Market & Economic Challenges</h5>
+    <ul>
+      <li>Price volatility and market competition affect all crops.</li>
+      <li>Farmers are adopting online sales and direct-to-consumer models.</li>
+    </ul>
         </div>
       ),
-
-
-
-
-
-  };
+ };
 
   return (
     <div className="details-page">

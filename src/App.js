@@ -36,7 +36,8 @@ function App() {
           path="/nutmeg-card" 
           element={
             <Card 
-              image="https://via.placeholder.com/300"
+            image="C:\Users\91974\OneDrive\Desktop\Samridhi\src\assets\nutmeg3.png.jpg"
+              /*image="https://via.placeholder.com/300"*/
               title="NUTMEG"
               description="Explore nutmeg cultivation techniques."
               details=""
