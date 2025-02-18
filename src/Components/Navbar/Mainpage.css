@@ -1,0 +1,13 @@
+/* Mainpage.css */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 20px; /* Spacing between cards */
+    margin-top: 24px; /* Top margin */
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+    }
+  }

@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png'; // Ensure the correct path
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { UserContext } from '../../UserContext';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navigate = useNavigate();
+  const { user } = useContext(UserContext);
 
   // Function to close the menu when a link is clicked
   const closeMenu = () => setMenuOpen(false);
@@ -33,18 +34,11 @@ const Navbar = () => {
         <li><Link to="/" className="menu-item" onClick={closeMenu}>Home</Link></li>
         <li><Link to="/about" className="menu-item" onClick={closeMenu}>About Us</Link></li>
         <li><Link to="/contact" className="menu-item" onClick={closeMenu}>Contact Us</Link></li>
-        <li><Link to="/login" className="menu-item" onClick={closeMenu}>Login</Link></li>
-        {/*<li>
-          <button 
-            className="menu-item login-btn"
-            onClick={() => {
-              navigate('/login');
-              closeMenu();
-            }}
-          >
-            Login
-          </button>
-        </li>*/}
+        {user ? (
+          <li className="menu-item">Welcome, {user.name}</li>
+        ) : (
+          <li><Link to="/login" className="menu-item" onClick={closeMenu}>Login</Link></li>
+        )}
       </ul>
     </nav>
   );

@@ -14,7 +14,7 @@ const Card = ({ image, title, description, details }) => {
 
         {/* Pass all details as state */}
         <Link 
-          to="/details" 
+          to={`/details`} 
           state={{ title, description, image, details }} 
           className="card-link"
         >

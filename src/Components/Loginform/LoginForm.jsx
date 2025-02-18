@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FaUser, FaLock } from 'react-icons/fa';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import './LoginForm.css';
+import { UserContext } from '../../UserContext';
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const LoginForm = () => {
     password: ''
   });
   const navigate = useNavigate();
+  const { setUser } = useContext(UserContext);
 
   const handleChange = (e) => {
     setFormData({
@@ -25,8 +27,12 @@ const LoginForm = () => {
       console.log(response.data);
       // Notify login successful
       alert('Login successful');
-      // Redirect to register page
-      navigate('/register');
+      // Store user information in local storage
+      localStorage.setItem('user', JSON.stringify(response.data.user));
+      // Update user context
+      setUser(response.data.user);
+      // Redirect to home page
+      navigate('/');
     } catch (error) {
       if (error.response) {
         console.error(error.response.data);
