@@ -7,6 +7,8 @@ import Home from './Components/Navbar/Mainpage';
 import About from './Components/About/About';
 import Contact from './Components/ContactForm/ContactForm';
 import Profile from './Components/Profile/Profile';
+import RegisterForm from './Components/Registerform/RegisterForm';
+import DetailsPage from "./Components/DetailsPage/DetailsPage";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/register" element={<RegisterForm />} />
+          <Route path="/details" element={<DetailsPage />} />
         </Routes>
       </Router>
     </UserProvider>

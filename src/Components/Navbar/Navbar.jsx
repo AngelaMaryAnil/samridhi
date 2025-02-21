@@ -35,7 +35,7 @@ const Navbar = () => {
         <li><Link to="/about" className="menu-item" onClick={closeMenu}>About Us</Link></li>
         <li><Link to="/contact" className="menu-item" onClick={closeMenu}>Contact Us</Link></li>
         {user ? (
-          <li className="menu-item">Welcome, {user.name}</li>
+          <li><Link to="/profile" className="menu-item" onClick={closeMenu}>Welcome, {user.name}</Link></li>
         ) : (
           <li><Link to="/login" className="menu-item" onClick={closeMenu}>Login</Link></li>
         )}

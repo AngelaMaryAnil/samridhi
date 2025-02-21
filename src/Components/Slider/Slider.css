@@ -8,6 +8,7 @@
 .slide {
   height: 500px;
   background-size: cover;
+  width: 100%;
   background-position: center;
   display: flex;
   align-items: flex-end; /* Align content to the bottom */
@@ -18,7 +19,7 @@
 .slide-content {
   color: white;
   text-align: left;
-  max-width: 60%;
+  max-width: 100%;
   padding: 10px 0; /* Remove background and extra padding */
 }
 

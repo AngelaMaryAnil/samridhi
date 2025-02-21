@@ -3,6 +3,10 @@ from flask import Flask, request, jsonify
 from pymongo import MongoClient
 import bcrypt
 from flask_cors import CORS
+from protonmail import ProtonMail
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env file
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -12,6 +16,12 @@ MONGO_URI = os.environ.get("MONGO_URI")
 client = MongoClient(MONGO_URI)
 db = client["mydatabase"]  # Replace with your actual database name
 users_collection = db["users"]
+
+# SMTP configuration
+SMTP_SERVER = "smtp.protonmail.com"
+SMTP_PORT = 587
+USERNAME = os.environ.get("PROTONMAIL_USERNAME")
+PASSWORD = os.environ.get("PROTONMAIL_PASSWORD")
 
 # Route to handle user registration
 @app.route("/register", methods=["POST"])
@@ -61,9 +71,53 @@ def login():
         if not bcrypt.checkpw(data["password"].encode('utf-8'), user["password"].encode('utf-8')):
             return jsonify({"error": "Invalid email/phone number or password"}), 400
 
-        return jsonify({"message": "Login successful"}), 200
+        # Remove password from user data before sending response
+        user_data = {
+            "name": user["name"],
+            "phoneNumber": user["phoneNumber"],
+            "email": user["email"],
+            "farmer": user["farmer"],
+            "state": user["state"],
+            "district": user["district"]
+        }
+        print("User data:", user_data)
+        return jsonify({"message": "Login successful", "user": user_data}), 200
 
     except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# Route to handle contact form submission
+@app.route("/contact", methods=["POST"])
+def contact():
+    try:
+        data = request.json
+        # Validate required fields
+        required_fields = ["name", "email", "subject", "message"]
+        for field in required_fields:
+            if field not in data or not data[field]:
+                return jsonify({"error": f"{field} is required"}), 400
+
+        # Send email using ProtonMail
+        proton = ProtonMail()
+        proton.login(USERNAME, PASSWORD)
+         # Send to your own email
+        subject= data["subject"]
+
+        body = f"Name: {data['name']}\nEmail: {data['email']}\n\nMessage:\n{data['message']}"
+
+        new_message = proton.create_message(
+            recipients=[USERNAME],
+            subject=data["subject"],
+            body=f"Name: {data['name']}\nEmail: {data['email']}\n\nMessage:\n{data['message']}"
+        )
+
+        sent_message = proton.send_message(new_message)
+       
+
+        return jsonify({"message": "Message sent successfully"}), 200
+
+    except Exception as e:
+        print(f"Error: {e}")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":

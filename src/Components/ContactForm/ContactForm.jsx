@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
+import axios from 'axios';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,10 +17,16 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add form submission logic here (e.g., sending data to a server)
-    alert('Message Sent!');
+    try {
+      const response = await axios.post('http://localhost:5000/contact', formData);
+      alert('Message Sent!');
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Failed to send message.');
+    }
   };
 
   return (
