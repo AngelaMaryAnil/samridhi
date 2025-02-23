@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import icon from '../../assets/logo.png'; // Add path to your icon image
+/*import icon from '../../assets/logo.png'; // Add path to your icon image*/
 
 const AboutDepartment = () => {
   return (

@@ -9,6 +9,7 @@ import Contact from './Components/ContactForm/ContactForm';
 import Profile from './Components/Profile/Profile';
 import RegisterForm from './Components/Registerform/RegisterForm';
 import DetailsPage from "./Components/DetailsPage/DetailsPage";
+import Shop from "./Components/Shop/Shopping";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/register" element={<RegisterForm />} />
           <Route path="/details" element={<DetailsPage />} />
+          <Route path="/shop" element={<Shop />} />
         </Routes>
       </Router>
     </UserProvider>

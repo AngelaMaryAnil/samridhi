@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "../Slider/Slider";
 import Card from "../Card/Card"; // Import the Card component
 import './Mainpage.css'; // Import the CSS file
+import Graph from "../MarketPriceGraph/MarketPriceGraph";
 
 const cardsData = [
   {
@@ -44,6 +45,7 @@ const SliderWithCards = () => {
           />
         ))}
       </div>
+      <Graph/>
     </div>
   );
 };

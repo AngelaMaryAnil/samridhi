@@ -34,11 +34,13 @@ const Navbar = () => {
         <li><Link to="/" className="menu-item" onClick={closeMenu}>Home</Link></li>
         <li><Link to="/about" className="menu-item" onClick={closeMenu}>About Us</Link></li>
         <li><Link to="/contact" className="menu-item" onClick={closeMenu}>Contact Us</Link></li>
+        <li><Link to="/shop" className="menu-item" onClick={closeMenu}>Shop</Link></li>
         {user ? (
           <li><Link to="/profile" className="menu-item" onClick={closeMenu}>Welcome, {user.name}</Link></li>
         ) : (
           <li><Link to="/login" className="menu-item" onClick={closeMenu}>Login</Link></li>
         )}
+        
       </ul>
     </nav>
   );
