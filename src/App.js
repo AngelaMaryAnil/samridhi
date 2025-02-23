@@ -16,6 +16,7 @@ const App = () => {
     <UserProvider>
       <Router>
         <Navbar />
+        <div className="body-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/details" element={<DetailsPage />} />
           <Route path="/shop" element={<Shop />} />
         </Routes>
+        </div>
       </Router>
     </UserProvider>
   );
