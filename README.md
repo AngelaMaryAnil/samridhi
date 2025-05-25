@@ -1,75 +1,61 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 🌱 Samridhi - Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Samridhi** is your trusted online platform for pre-booking quality agricultural supplies, including seeds, saplings, pesticides, and fertilizers from your local Krishi Bhavan. The project aims to streamline the process for farmers and agricultural professionals to access essential products with ease and transparency.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- 🔍 **Explore Products:** Browse a wide selection of agricultural supplies.
+- 🗂️ **Category Browsing:** Quickly navigate through categories like Seeds, Saplings, Pesticides, and Fertilizers.
+- 📊 **Seller Dashboard:** Dedicated dashboard for sellers to manage their inventory and orders.
+- 🖥️ **Modern UI:** Clean, user-friendly interface for seamless navigation.
+- 🔎 **Search:** Effortlessly search for products using the top search bar.
 
-### `npm start`
+## 🖼️ Screenshot
+![Screenshot 2025-05-25 133206](https://github.com/user-attachments/assets/291cd440-d082-4ced-b9b3-d719ef048831)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚡ Getting Started
 
-### `npm test`
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/AngelaMaryAnil/samridhi.git
+   cd samridhi
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Access the application:**
+   Open [http://localhost:5173/](http://localhost:5173/) in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🗂️ Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `/src` - Main source code for the frontend.
+- `/public` - Static files and assets.
+- `/components` - UI components such as ProductList, CategoryCards, etc.
+- `/pages` - Application pages (Home, Products, Dashboard, etc.).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Technologies Used
 
-### `npm run eject`
+- ⚛️ React.js (or your frontend framework)
+- 🎨 CSS/SCSS for styling
+- 🟩 Node.js & Express (if applicable for backend)
+- 🔗 RESTful APIs for data fetching
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# Samridhi-mini" 
-=======
-# samridhi
->>>>>>> abc1cc6337f055b1712269f9a6004171305b9631
+*Samridhi - Empowering Agriculture Digitally* 🚀
